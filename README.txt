@@ -7,3 +7,13 @@ This program also allows for discreet mining with the 'hide console' option.
 Customizable pool option as well as ziftr address.
 
 Leaving the default pool and using your ziftrCOIN address will still result in you receiving shares of the mined currency.
+
+
+DOWNLOAD LINK - 
+
+http://sourceforge.net/projects/inziftr/files/INziftr_1_0_0.zip/download
+
+
+SOURCEFORGE URL -
+
+https://sourceforge.net/projects/inziftr/
