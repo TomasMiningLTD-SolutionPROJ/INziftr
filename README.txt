@@ -1,3 +1,5 @@
+#Discreet GUI for Pooler's CPUminer, set to mine for ziftrCOIN
+
 This program is written in C# and is used for mining ziftrCOIN with your CPU.
 
 This program also allows for discreet mining with the 'hide console' option.
