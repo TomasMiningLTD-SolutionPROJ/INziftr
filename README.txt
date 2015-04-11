@@ -23,3 +23,4 @@ SCREENSHOTS -
 
 https://a.fsdn.com/con/app/proj/inziftr/screenshots/ss1.jpg
 https://a.fsdn.com/con/app/proj/inziftr/screenshots/ss2.jpg
+https://a.fsdn.com/con/app/proj/inziftr/screenshots/ss3.jpg
