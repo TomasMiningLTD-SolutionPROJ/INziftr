@@ -17,3 +17,9 @@ http://sourceforge.net/projects/inziftr/files/INziftr_1_0_0.zip/download
 SOURCEFORGE URL -
 
 https://sourceforge.net/projects/inziftr/
+
+
+SCREENSHOTS - 
+
+https://a.fsdn.com/con/app/proj/inziftr/screenshots/ss1.jpg
+https://a.fsdn.com/con/app/proj/inziftr/screenshots/ss2.jpg
