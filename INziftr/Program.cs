@@ -1,14 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Diagnostics;
-using System.Linq;
 using System.Management;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace INziftr
 {
-    static class Program
+    internal static class Program
     {
         public static Process PriorProcess()
         // Returns a System.Diagnostics.Process pointing to
@@ -16,8 +13,8 @@ namespace INziftr
         // current one, if any; or null if the current process
         // is unique.
         {
-            Process curr = Process.GetCurrentProcess();
-            Process[] procs = Process.GetProcessesByName(curr.ProcessName);
+            var curr = Process.GetCurrentProcess();
+            var procs = Process.GetProcessesByName(curr.ProcessName);
             foreach (Process p in procs)
             {
                 if ((p.Id != curr.Id) &&
@@ -26,26 +23,24 @@ namespace INziftr
             }
             return null;
         }
+
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
         [STAThread]
-        static void Main()
+        private static void Main()
         {
-
             if (PriorProcess() != null)
             {
-
             }
             else
             {
+                Global.coreCount = Environment.ProcessorCount;
 
-                Global.coreCount = Environment.ProcessorCount; 
-
-                ManagementObjectSearcher mos = new ManagementObjectSearcher("root\\CIMV2", "SELECT * FROM Win32_Processor");
+                var mos = new ManagementObjectSearcher(@"root\CIMV2", @"SELECT * FROM Win32_Processor");
                 foreach (ManagementObject mo in mos.Get())
                 {
-                    Global.processorname += mo["Name"];
+                    Global.processorname += mo[@"Name"];
                 }
                 Application.EnableVisualStyles();
                 Application.SetCompatibleTextRenderingDefault(false);

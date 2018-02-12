@@ -62,7 +62,7 @@
             this.stop.TabIndex = 1;
             this.stop.Text = "Stop";
             this.stop.UseVisualStyleBackColor = true;
-            this.stop.Click += new System.EventHandler(this.stop_Click);
+            this.stop.Click += new System.EventHandler(Form1.stop_Click);
             // 
             // numberofcores
             // 
@@ -92,7 +92,7 @@
             this.dl.TabIndex = 4;
             this.dl.Text = "Download Files";
             this.dl.UseVisualStyleBackColor = true;
-            this.dl.Click += new System.EventHandler(this.dl_Click);
+            this.dl.Click += new System.EventHandler(Form1.dl_Click);
             // 
             // processor
             // 
@@ -111,7 +111,7 @@
             this.delete.TabIndex = 6;
             this.delete.Text = "Delete Files";
             this.delete.UseVisualStyleBackColor = true;
-            this.delete.Click += new System.EventHandler(this.delete_Click);
+            this.delete.Click += new System.EventHandler(Form1.delete_Click);
             // 
             // address
             // 
@@ -121,7 +121,7 @@
             this.address.TabIndex = 7;
             this.address.Text = "ZW7WatsbHpjoMiWjjqh6mmxC94SXR53wyQ";
             this.address.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.address.TextChanged += new System.EventHandler(this.address_TextChanged);
+            this.address.TextChanged += new System.EventHandler(Form1.address_TextChanged);
             // 
             // addresstext
             // 
@@ -149,7 +149,7 @@
             this.textBox1.TabIndex = 10;
             this.textBox1.Text = "stratum+tcp://ziftrpool.io:3032";
             this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.textBox1.TextChanged += new System.EventHandler(Form1.textBox1_TextChanged);
             // 
             // ziftrlink
             // 
@@ -160,7 +160,7 @@
             this.ziftrlink.TabIndex = 11;
             this.ziftrlink.TabStop = true;
             this.ziftrlink.Text = "No address? Get one here!";
-            this.ziftrlink.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.ziftrlink_LinkClicked);
+            this.ziftrlink.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(Form1.ziftrlink_LinkClicked);
             // 
             // where
             // 
@@ -197,7 +197,7 @@
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "INziftr";
-            this.Load += new System.EventHandler(this.Form1_Load);
+            this.Load += new System.EventHandler(Form1.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
